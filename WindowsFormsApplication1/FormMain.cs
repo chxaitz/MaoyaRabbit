@@ -11,9 +11,9 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApplication1
+namespace WindowsFormsApplication
 {
-    public partial class Form1 : Form
+    public partial class FormMain : Form
     {
         private const string M_HostName = "localhost";
         private string hosturl = "http://localhost:15672";
@@ -30,7 +30,7 @@ namespace WindowsFormsApplication1
         private QueueEntity queue;
         private BindingEntity binding;
 
-        public Form1()
+        public FormMain()
         {
             InitializeComponent();
             exchangesApi = hosturl + "/api/exchanges";
